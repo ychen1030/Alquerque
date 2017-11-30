@@ -1,0 +1,11 @@
+# Trivial test of initial board.
+java -ea qirkat.Main
+dump
+@<===
+@<  b b b b b
+@<  b b b b b
+@<  b b - w w
+@<  w w w w w
+@<  w w w w w
+@<===
+quit

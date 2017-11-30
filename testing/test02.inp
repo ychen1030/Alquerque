@@ -1,0 +1,12 @@
+# Test the set command.
+java -ea qirkat.Main
+set white w---w ----- ----- ----- bb---
+dump
+@<===
+@< b b - - -
+@< - - - - -
+@< - - - - -
+@< - - - - -
+@< w - - - w
+@<===
+quit

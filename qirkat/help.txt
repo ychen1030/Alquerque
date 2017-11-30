@@ -1,0 +1,23 @@
+Move commands:
+   C1R1-C2R2-...-CkRk
+            Where Ci are column letters a-e, Ri are row
+            numbers 1-5, using the following designations:
+
+                 5 - - - - -
+                 4 - - - - -
+                 3 - - - - -
+                 2 - - - - -
+                 1 - - - - -
+                   a b c d e
+
+Commands:
+   start    Begin a new game.
+   clear    Clear the board and set up for a new game.
+   auto C   Let player C (White or Black) be an AI.
+   manual C Let player C (White or Black) be a manual player.
+   seed N   Seed random number generator with N.
+   load F   Execute commands from file F.
+   dump     Print the board.
+   quit     Resign any current game and exit program.
+   help     Print this message.
+
