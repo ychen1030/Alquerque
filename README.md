@@ -15,7 +15,7 @@ If a piece is adjacent to an enemy piece along a line, and the position immediat
 
 For example, on the board below, the transparent pieces show the five possible moves available to the black piece and the three possible moves available to the white piece.  
 
-![move](img/move.png)
+<img src="img/move.png" width="200">
 
 The three boards below show three possible capturing sequences (of 4, 1, and 3 white pieces, respectively) for the central black piece. The captured white pieces are numbered with the sequence in which they are captured.  
 
@@ -55,22 +55,22 @@ The program rejects illegal moves from any player (they have no effect on the bo
 
 ### Miscellaneous commands
 - **help** Print a brief summary of the commands.
-- **dump** This command is especially for testing and debugging. It prints the board out in exactly the following format:
-===
-  b w - b b
-  - w - - -
-  b - w w w
-  - - - - -
-  b - w - b
-===
-Here, - indicates an empty square, w indicates a White piece, and b indicates a Black piece. This gives the autograder a way to determine the state of the game board at any point. It does not change any of the state of the program.
+- **dump** This command is especially for testing and debugging. It prints the board out in exactly the following format:  
+===  
+  b w \- b b  
+  \- w \- \- \-  
+  b - w w w  
+  \- \- \- \- \-  
+  b \- w \- b  
+===  
+Here, `-` indicates an empty square, `w` indicates a White piece, and `b` indicates a Black piece. This gives the autograder a way to determine the state of the game board at any point. It does not change any of the state of the program.
 
-- **load file** Reads the given file and in effect substitutes its contents for the load command itself.
+- **load file** Reads the given `file` and in effect substitutes its contents for the load command itself.
 - **set C SPEC** Puts the current game in set-up state, and sets the board so that it is player C's turn (C is white or black), and the board is as given by SPEC. SPEC is a sequence of 25 'b', 'w', and '-' characters, optionally interspersed with blanks and tabs. These give the board contents row by row starting from row '1'. Initially, all horizontal piece moves are allowed.
 
 
 ## Output
-When either player enters a winning move, the program will print a line saying either `White wins.` or `Black wins.` as appropriate. t that point, the program goes back into set-up state (maintaining the final state of the board so that the user may examine it).
+When either player enters a winning move, the program will print a line saying either `White wins.` or `Black wins.` as appropriate. At that point, the program goes back into set-up state (maintaining the final state of the board so that the user may examine it).
 
 Whenever a player is an AI, it should print out each move that it makes, using one of the formats:
 ```
@@ -80,7 +80,7 @@ Whenever a player is an AI, it should print out each move that it makes, using o
 
 
 ## Running the Program
-Run the program with the command
+Run the program with the command:
 ```
 java -ea qirkat.Main
 ```
@@ -88,4 +88,6 @@ java -ea qirkat.Main
 
 ## Results
 
-![alt text](img/results.png)
+![alt text](img/results.png)  
+
+This solution achieved 1st Place in the Qirkat AI Tournament with 1088 wins!
